@@ -1,0 +1,385 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root{
+    --color-my-color: red;
+    --color-background: #171717;
+    --color-background2: #191919;
+    --color-background3: #212121;
+}
+
+/*navbar*/
+.navbar{
+    height: 12vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-content: center;
+    padding: 0 3rem;
+    position: fixed;
+    z-index: 1000;
+    opacity: 0.87;
+}
+.list{
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    gap: 2rem;
+    font-size: 1.2rem;    
+}
+.name h4{
+    font-size: 1.6rem;
+}
+
+
+
+/*End Of NavBar*/
+
+/*Sec1*/
+.my-name{
+    color: var(--color-my-color);
+}
+.sec1_img {
+    width: 40%;
+}
+.sec1_img img{
+    width: 80%;
+}
+
+.sec1{
+    display: flex;
+    height: 100vh;
+    background-color: #171717;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec1_content{
+    padding-left: 6rem;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.sec1_content h2{
+    font-size: 5rem;
+    margin: 0.5rem 0;
+}
+.sec1_content p{
+    font-size: 2rem;
+    
+}
+.sec1_contact{
+    background: none;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 2rem;
+    margin-top: 4rem;
+}
+.sec1_cv{
+    color: var(--color-my-color);
+    background: none;
+    border: 1px solid var(--color-my-color);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/*End oF Sec1*/
+
+/*Sec2*/
+.sec2{
+ 
+    height: auto;
+   
+    background-color: #191919;
+    display: flex;
+    
+    align-items: center;
+    padding: 3rem 8rem;
+}
+.sec2-img{
+    width: 60%;
+}
+.sec2-img img{
+    width: 100%;
+}
+.sec2-content{
+    width: 80%;
+    color: white;
+    text-align: left;
+    padding-left: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 4rem 0;
+}
+.sec2-content h3{
+    font-size: 3.5rem;
+}
+.sec2-content p{
+    font-size: 1.6rem;
+    
+}
+
+/*End of Sec2*/
+.sec3{
+    height: 150vh;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color-background);
+}
+.sec3-text{
+    font-size: 4rem;
+    color: white;
+}
+.sec3-projetos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    place-items: center;
+    width: 70%;
+}
+.projeto{
+    width: 250px;
+    height: 355px;
+    background-color: black;
+    
+
+}
+
+
+
+
+
+/*Section 5*/
+.sec5-content{
+    align-self: flex-start;
+    padding-top:8rem;
+}
+.sec5-content h3{
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: left;
+    width: 100%;
+    justify-content: flex-start;
+}
+.sec5-content p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+
+
+.sec5{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    color: white;
+    place-items: center;
+}
+.logos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-content: center;
+    padding: 1rem;
+    margin: 1rem;
+    gap: 0.5rem;
+}
+   
+.logo{
+    width: 150px;
+    height: 150px;
+    background-color: var(--color-background3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+    animation: all 0.8s;
+}
+
+
+.logo svg{
+    color: rgb(144, 33, 255);
+    width: 50%;
+    height: 50%;
+    transition: all 0.4s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.sec5{
+    height: 80vh;
+    background-color: var(--color-background2);
+}
+
+/*End of Section5*/
+
+/*Section 6*/
+
+.sec6{
+    height: 70vh;
+    background-color: var(--color-background);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+.point{
+
+    font-size: 5rem;
+    
+    color: red;
+    
+  
+}
+.sec6-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+.sec3-h3{
+    font-size: 4rem;
+    color: white;
+}
+.social-media img{
+    margin-right: 1rem;
+    color: red;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-around;
+    justify-self: flex-start;
+    gap: 1rem;
+    height: auto;
+    width: 55%;
+}
+form input{
+    background-color: #343434;
+    color: #9F9F9F;
+    border: none;
+    padding: 1rem 0.7rem;
+    border-radius: 0.7rem ;
+}
+textarea{
+    background-color: #343434;
+    color: #9F9F9F;
+    border: none;
+    padding: 1rem 0.7rem;
+    
+}
+form button{
+    width: 60%;
+    padding: 0.5rem;
+    background-color: red;
+    color: black;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    border-radius: 0.5rem ;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}
+form button:hover{
+  
+    background-color: black;
+    color: red;
+}
+/*End of Section6*/
+
+
+/*Footer*/
+footer{
+    height: 20vh;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+footer a{
+    text-decoration: none;
+    outline: none;
+    font-size: 1.8rem;
+    color: white;
+    transition: transform 0.5s;
+
+}
+i{
+    
+    font-size: 3rem;
+}
+a:hover{
+    transform: scale(1.05);
+}
+
+/*End of Footer*/
